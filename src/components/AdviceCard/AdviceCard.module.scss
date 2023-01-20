@@ -4,4 +4,8 @@
   width: 35vw;
   height: 35vh;
   background-color: $dark-grayish-blue;
+
+  .quotes {
+    font-size: $quote-font;
+  }
 }

@@ -4,7 +4,7 @@ import { AdviceCard } from "@/components/AdviceCard/AdviceCard";
 
 import styles from "@/styles/Home.module.scss";
 
-const manrope = Manrope({ weight: "800", subsets: ["latin"] });
+const manrope = Manrope({ weight: "800", subsets: [] });
 
 export default function Home() {
   return (
