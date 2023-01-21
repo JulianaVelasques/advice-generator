@@ -1,29 +1,45 @@
-import useSWR from "swr";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import axios from "axios";
 
 import { Button } from "../Button/Button";
 
+import dividerDesktop from "../../assets/pattern-divider-desktop.svg";
+
 import styles from "./AdviceCard.module.scss";
 
-const fetcher = (url: any) => fetch(url).then((r) => r.json());
-
 export function AdviceCard() {
-  const { data, error, isLoading } = useSWR(
-    "https://api.adviceslip.com/advice",
-    fetcher
-  );
+  const [advice, setAdvice] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    getData();
+  });
+
+  const getData = () => {
+    axios("	https://api.adviceslip.com/advice")
+      .then((resp) => {
+        setAdvice(resp.data.slip.advice);
+      })
+      .catch((err) => {
+        console.error("Error fetching data", err);
+      })
+      .finally(() => setIsLoading(false));
+  };
 
   return (
     <div className={styles.container}>
-      <div className={styles.content}>
-        <p>ADVICE #117</p>
-        <div>
-          <p className={styles.quotes}> &ldquo;</p>
-          {isLoading && <h1>...</h1>}
-          <p>{data?.slip.advice}</p>
-          <p className={styles.quotes}>&rdquo;</p>
-        </div>
+      <p className={styles.advice}>ADVICE #117</p>
+
+      <div className={styles.quoteContainer}>
+        &ldquo;
+        {isLoading ? <p>...</p> : advice}
+        &rdquo;
       </div>
-      {/* <Button onClick={getData} /> */}
+
+      <Image src={dividerDesktop} alt="divider" className={styles.img} />
+
+      <Button onClick={getData} className={styles.btn} />
     </div>
   );
 }
