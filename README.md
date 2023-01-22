@@ -1,38 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center"> Advice Generator <h1>
 
-## Getting Started
+<h4 align="center">
+  🚀 Frontend Mentor - Advice Generator solution.
+</h4>
 
-First, run the development server:
+<p align="center">
+  
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/JulianaVelasques/advice-generator">
+  
+  <a href="https://github.com/JulianaVelasques/advice-generator/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/JulianaVelasques/advice-generator">
+  </a>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+  <a href="https://github.com/JulianaVelasques/advice-generator/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/JulianaVelasques/advice-generator">
+  </a>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+</p>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<p align="center">
+  <a href="#page_with_curl-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#wrench-built-with">Built With</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-contribute">How to Contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#sunglasses-future-releases">Future Releases</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#woman_technologist-author">Author</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
+  
+ ## Preview
+  <div align='center'><img src="design/desktop-preview.jpg" alt="Demo" width="500" /></div>
+  
+ 
+## :page_with_curl: About
+This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### The challenge
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Users should be able to:
 
-## Learn More
+Users should be able to:
 
-To learn more about Next.js, take a look at the following resources:
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Generate a new piece of advice by clicking the dice icon
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Motivation
+Create personal project to implement the stacks that I'm currently learning.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Links
 
-## Deploy on Vercel
+- Solution URL: [Here](https://github.com/JulianaVelasques/advice-generator)
+- Live Site URL: [Here](https://advice-generator-pi-one.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## :wrench: Built With
+
+- [Next](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [JavaScript](https://www.javascript.com/)
+- [SCSS / SASS](https://sass-lang.com/)
+
+## 🤔 How to Contribute
+
+- Clone the project: `git clone git@github.com:JulianaVelasques/advice-generator.git`;
+- Create your branch with your feature: `git checkout -b my-feature`;
+- Install the dependencies: `npm install` and `yarn add`
+- Commit your feature: `git commit -m 'feat: My new feature'`;
+- Push to your branch: `git push -u origin my-feature`.
+
+After the merge of your pull request is done, you can delete your branch.
+  
+## :sunglasses: Future releases
+  - Include CRUD to allow user add / edit the monthly income.
+  
+## :woman_technologist: Author
+
+- Website - [Juliana Velasques](https://julianavelasques.vercel.app/)
+- Frontend Mentor - [@JulianaVelasques](https://www.frontendmentor.io/profile/JulianaVelasques)
+- LinkedIn - [Juliana Velasques Balta](https://www.linkedin.com/in/julianavelasquesbalta/)
+
+ 
+## :memo: License
+
+This project is under the MIT license. See the [LICENSE](LICENSE.md) file for more details.
+
+---
+
+Made with ♥ by <tr>
+    <td align="center"><a href="https://github.com/JulianaVelasques"><b>Juliana Velasques</b></a><br /></td>
+<tr>
