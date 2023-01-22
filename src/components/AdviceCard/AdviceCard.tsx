@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import axios from "axios";
 
 import { Button } from "../Button/Button";
+import { Loader } from "../Loader/Loader";
 
 import dividerDesktop from "../../assets/pattern-divider-desktop.svg";
 
@@ -14,12 +14,14 @@ export function AdviceCard() {
 
   useEffect(() => {
     getData();
-  });
+  }, []);
 
   const getData = () => {
-    axios("	https://api.adviceslip.com/advice")
-      .then((resp) => {
-        setAdvice(resp.data.slip.advice);
+    setIsLoading(true);
+    fetch("https://api.adviceslip.com/advice", { cache: "no-cache" })
+      .then((resp) => resp.json())
+      .then((data) => {
+        setAdvice(data.slip.advice);
       })
       .catch((err) => {
         console.error("Error fetching data", err);
@@ -32,9 +34,7 @@ export function AdviceCard() {
       <p className={styles.advice}>ADVICE #117</p>
 
       <div className={styles.quoteContainer}>
-        &ldquo;
-        {isLoading ? <p>...</p> : advice}
-        &rdquo;
+        {isLoading ? <Loader /> : <>&ldquo; {advice} &rdquo; </>}
       </div>
 
       <Image src={dividerDesktop} alt="divider" className={styles.img} />
